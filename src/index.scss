@@ -1,0 +1,127 @@
+@import './scss/variable.scss';
+@import './scss/reset.scss';
+@import './scss/normalize.scss';
+body {
+    // overflow: hidden !important;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 7px;
+    border: 4px solid transparent;
+    background-color: rgba(120, 120, 120, 0.4);
+    background-clip: padding-box;
+}
+
+::-webkit-scrollbar {
+    width: 14px;
+    height: 14px;
+}
+.App-main {
+    // height: calc(100vh - 52px) !important;
+    .Topstory {
+        // 主内容宽度
+        .Topstory-container {
+            width: 100% !important;
+            // height: 100% !important;
+            .zhihu-nice-left-side-bar {
+                flex: 0 0 300px !important;
+            }
+
+            .Topstory-mainColumn {
+                // height: 100% !important;
+                flex: 1 1 100% !important;
+                margin-right: 330px;
+                min-height: 100vh;
+                .Pc-Business-Card-PcTopFeedBanner {
+                    display: none !important;
+                }
+                // .Topstory-mainColumnCard {
+                //     height: 100% !important;
+                //     display: flex !important;
+                //     flex-direction: column !important;
+                // }
+                // .Topstory-tabCard {
+                //     flex: 0 0 auto;
+                // }
+                // .Topstory-content {
+                //     height: 100% !important;
+                //     flex: 1 1 100% !important;
+                //     overflow-y: auto !important;
+                // }
+                .RichContent-cover {
+                    display: none !important;
+                }
+            }
+            .GlobalSideBar {
+                flex: 0 0 320px !important;
+                min-width: 320px !important;
+                max-width: 320px !important;
+                position: fixed;
+                right: 0;
+                bottom: 0;
+                top: 61px;
+                overflow-y: auto;
+                .ClubSliderList {
+                    width: 100%;
+                }
+            }
+        }
+        // 标题类型
+        .ContentItem-title {
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 52px;
+            z-index: 99;
+            background-color: #fff;
+        }
+        .date-time-line {
+            margin-top: 10px;
+            color: #999999;
+            font-size: 14px;
+            .created_at,
+            .updated_at {
+                margin-right: 10px;
+            }
+        }
+        .title-type-answer,
+        .title-type-article,
+        .title-direct {
+            height: 24px;
+            font-size: 14px;
+            margin-right: 5px;
+            padding: 0 6px;
+            border: 1px solid #fff;
+            border-radius: 4px;
+            font-weight: normal;
+            color: #fff;
+            text-shadow: 0px 0px 1px #ffe1e1;
+            word-break: keep-all;
+            white-space: nowrap;
+        }
+        .title-type-answer {
+            background-color: #e6a23c;
+        }
+        .title-type-article {
+            background-color: #67c23a;
+        }
+        .title-direct {
+            background-color: #e33;
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// 头部样式
+.AppHeader-inner {
+    max-width: 100% !important;
+    padding-right: 16px !important;
+    .css-1acwmmj {
+        flex: 0 0 auto;
+    }
+    .AppHeader-userInfo {
+        flex: 1 1 100%;
+        justify-content: flex-end;
+    }
+}
